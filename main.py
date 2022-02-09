@@ -49,6 +49,7 @@ def main():
         LastWeatherFileJson['wind_speed'] = resp_last_weather['wind']['speed']
         LastWeatherFileJson['wind_deg'] = resp_last_weather['wind']['deg']
         LastWeatherFileJson['weather'] = resp_last_weather['weather'][0]['icon']
+        LastWeatherFileJson['clouds_percentage'] = resp_last_weather['clouds']['all']
         LastWeatherFileJson['sunrise'] = datetime.utcfromtimestamp(resp_last_weather['sys']['sunrise']).strftime('%H:%M:%S')
         LastWeatherFileJson['sunset'] = datetime.utcfromtimestamp(resp_last_weather['sys']['sunset']).strftime('%H:%M:%S')
 
@@ -74,6 +75,7 @@ def main():
             ForecastFileJson[i]['wind_speed'] = resp_forecast['list'][i]['wind']['speed']
             ForecastFileJson[i]['wind_deg'] = resp_forecast['list'][i]['wind']['deg']
             ForecastFileJson[i]['weather'] = resp_forecast['list'][i]['weather'][0]['icon']
+            ForecastFileJson[i]['clouds_percentage'] = resp_forecast['list'][i]['clouds']['all']
 
         with open(FILE_DIR + '/weather/forecast.json', 'w') as ForecastFile:
             ForecastFile.write(json.dumps(ForecastFileJson))
