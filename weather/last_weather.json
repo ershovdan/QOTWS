@@ -1,0 +1,15 @@
+{
+  "temp": 0.62,
+  "temp_feels": -4.14,
+  "temp_min": 0.03,
+  "temp_max": 2.28,
+  "pressure": 1001,
+  "humidity": 84,
+  "visibility": 10000,
+  "wind_speed": 5,
+  "wind_deg": 270,
+  "weather": "04d",
+  "clouds_percentage": 280,
+  "sunrise": "05:53:19",
+  "sunset": "14:33:06"
+}
