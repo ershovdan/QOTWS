@@ -8,7 +8,7 @@ QOTWS | Weather information collector
 - os
 - threading
 
-##Usage
+## Usage
 1. Generate key on [openweathermap](https://openweathermap.org/appid)
 2. Open cfg/main.cfg
 3. Insert your key into "key"
